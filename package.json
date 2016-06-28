@@ -1,0 +1,32 @@
+{
+  "name": "origin-url",
+  "version": "0.0.0",
+  "description": "Returns the window's current origin.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel --presets es2015 --plugins add-module-exports -d lib/ src/",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timer/origin-url.git"
+  },
+  "keywords": [
+    "window",
+    "origin",
+    "url",
+    "base"
+  ],
+  "author": "Joe Haddad <timer150@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timer/origin-url/issues"
+  },
+  "homepage": "https://github.com/timer/origin-url#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
